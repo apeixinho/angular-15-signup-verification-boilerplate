@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-15-example": {
+    "angular-18-example": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/angular-15-example"
+              "base": "dist/angular-18-example"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-15-example:build:production"
+              "buildTarget": "angular-18-example:build:production"
             },
             "development": {
-              "buildTarget": "angular-15-example:build:development"
+              "buildTarget": "angular-18-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-15-example:build"
+            "buildTarget": "angular-18-example:build"
           }
         },
         "test": {
